@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Events</title>
+</head>
+<style>
+    #btn{
+        padding:10px 34px;
+        background-color: rgb(176, 186, 89);
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+
+    }
+</style>
+<body>
+    <!-- Browser events:
+    click
+    contextmenu 
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    Submit
+    focus
+
+    DOMContentLoaded
+
+    transitioned -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui totam quos aperiam veritatis reprehenderit. Cum maiores, fugit laboriosam sequi eligendi nisi sunt iste illo.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        function toggleHide(){
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display ='none';
+            }
+            else{
+                para.style.display ='bloc';
+            }
+        }
+    </script>
+    
+</body>
+</html>

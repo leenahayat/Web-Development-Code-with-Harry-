@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intense Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <style>
+        /* CSS RESET */
+        
+        body {
+            font-family: "Ramabhadra", sans-serif;
+            font-size: large;
+            color: rgb(235, 230, 230);
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/pg12.jpg');
+            background-position: relative;
+            background-repeat: no-repeat;
+            background-color: black;
+            height: auto;
+        
+            
+        }
+
+        .left {
+            border: 2px solid rgb(217, 212, 212);
+            border-radius: 20px;
+            padding: 4px 14px;
+            background-color: black;
+            text-align: center;
+            float: left;/* Use float instead of absolute positioning */
+            margin-top: 18px; /* Use margin-top instead of positioning */
+            margin-left: 34px; /* Use margin-left instead of positioning */
+        }
+        .container{
+            border: 2px solid rgb(9, 9, 9);
+            border-radius: 460px;
+            padding: 50px 43px 45px 65px;
+            float: ;
+            width: 33%;
+            background-color: black;
+            text-align: center;
+            float: right; 
+            /* Use float instead of absolute positioning */
+            float:calc(25px);
+            margin-top: 18px; /* Use margin-top instead of positioning */
+            margin-left: 34px; /* Use margin-left instead of positioning */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* height: 80vh; */
+        }
+        .left:active, .left:hover{
+            text-decoration: underline;
+            color: grey;
+            cursor: pointer;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(31, 164, 75); */
+            width: 36%;
+            margin: 12px auto;
+            text-align: center; /* Center the navigation */
+        }
+
+        .right {
+            /* border: 2px solid rgb(111, 159, 27); */
+            float: right; /* Use float instead of absolute positioning */
+            margin-top: 10px; /* Use margin-top instead of positioning */
+            margin-right: 34px; /* Use margin-right instead of positioning */
+        }
+
+        .navbar {
+            list-style-type: none; /* Remove bullet points from the list */
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .navbar li a {
+            color: rgb(235, 228, 228);
+            text-decoration: none;
+            padding: 24px 24px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: grey;
+        }
+       
+       
+        @media screen and (max-width: 768px) {
+            .left, .mid, .right {
+                width: 100%; /* Make sections full width */
+                float: none; /* Remove floats */
+                text-align: center; /* Center content */
+                margin: 0; /* Remove margins */
+            }
+        }
+        .btn{
+         margin: 0px 0px;
+         background-color: rgb(29, 28, 28);
+         color: white;
+         padding: 4px 14px;
+         border-radius: 18px;
+         font-size: large;
+
+         
+        }
+        .btn:hover, .btn:active{
+            text-decoration: underline;
+            color: grey;
+            cursor: pointer;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 8px;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+    
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <!-- <img src="img/gym.png" alt="Gym Logo"> -->
+            <!-- <img src="img/heart1.jpg" alt="Gym Logo"> -->
+            Intensive<br>
+               GYM
+    
+        
+        </div>
+        <!-- mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About Us</a></li>
+                <li><a href='#'>Fitness Calculator</a></li>
+                <li><a href='#'>Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <!-- <h2>Intensive GYM</h2>
+    <p>A gym isn’t just a place for exercise; it’s the place you go to unwind, socialize and work out. The gym is a whole experience. Some of the most successful facilities have several gym features that contribute to the kind of member experience that drives retention and sales.</p>
+    <p>There are various reasons why members choose specific gyms. When two brands provide a similar service, a lot of the time it doesn’t come down to price, but the value you bring. There’s no point in paying for a cheaper membership when it doesn’t meet all your requirements. By integrating top gym features into your business, you can beat out the competition and attract your target audience. In this article, we talk about what makes a great gym and 10 gym features of a successful fitness business. </p> -->
+
+    <div class="container">
+        <h3>Join The Best GYM of Your Area</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Age">
+            
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Weight">
+            
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Height">
+            
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Mobile Number">
+            
+            </div>
+            <button class="btn">Submitt</button>
+            </button>
+            <button class="btn">Reset</button>
+        </button>
+        </form>
+    </div>
+</body>
+</html>

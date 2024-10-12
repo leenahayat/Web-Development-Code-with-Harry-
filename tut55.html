@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops.
+    </div>
+    <script>
+      console.log('This is tutorial 55');
+      //For loop
+      let m=0;
+      for(m=0;m<3;m++){
+        console.log(m);
+      }
+      //Example of for loop
+    //   let friend =["Anam" ,"Nida" , 'Rabail',"Rida","Hina"]
+    //   for (let index= 0;  index < friend.length;  index++) {
+    //    console.log("Hello Friend, "+friend[index]);
+    //   }
+      
+    
+
+      let employee={
+        name:"Harry",
+        salary:2,
+        channel:"CWH"
+      }
+      //Use this loop to iterate over objects in JavaScript
+      for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+      }
+
+      //while loop in JS
+      let i=0;
+      while(i<4){
+        console.log(`${i} is less than 4`);
+        i++;
+      }
+
+      //dowhile loop inJS
+      z=2;
+      do{
+        console.log(`${z} is less than 4` );
+        z++;
+      }while(z<4);
+
+      </script>
+</body>
+</html>

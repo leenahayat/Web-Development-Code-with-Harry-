@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script | Scope and Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string";
+        var string2 = "This is a string2";
+        console.log(string1);
+        console.log(string2);
+
+
+        let a = "u";
+        console.log(a);
+        {
+            let a="u6";
+            console.log(a);
+        }
+
+
+        const b = "This  cannot be changed";
+        console.log(b);
+        
+
+        //use of ifelse
+        let age = 34;
+        if(age>18){
+            console.log("You can drink water");
+        }
+        else{
+            console.log("You can drink Cold drink");
+        }
+
+        //use of elseif
+        let myage = 18;
+        if(myage==2){
+            console.log("You are an infant");
+        }
+        else if(myage=18){
+            console.log("You are young now");
+        
+        }
+        else{
+            console.log("Your age is not readable");
+        }
+
+        //Switch case statement
+       const cups = 45;
+       switch (cups) {
+        case 4:
+            console.log("The value of cups is 4");
+            break;
+       
+        case 43:
+            console.log("The value of cups is 43");
+            break;
+         
+        case 45:
+            console.log("The value of cups is 45");
+            break;    
+        default:
+            console.log("The value of cups is none of 41,43,45")
+            break;
+       } 
+        </script>
+</body>
+</html>
