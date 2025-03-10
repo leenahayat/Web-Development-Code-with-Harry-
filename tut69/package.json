@@ -1,0 +1,26 @@
+//npm init
+
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "best package ever built by someone",
+  "main": "tut69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Awesome!!!"
+  ],
+  "author": "Leena",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "slugify": "^1.6.6"
+  }
+}
+//npm install nodemon --save-dev
+//npm install slugify
+//npm install express
+//npm install nodemon --global (nodemon tut69.js)
+
+ 
